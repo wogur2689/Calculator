@@ -12,7 +12,7 @@ import java.util.List;
 public class CalculatorController {
 
     /* api 테스트 */
-    @GetMapping("/")
+    @GetMapping("/api/ping")
     public void apiTest() {
       log.info("ping!");
     }
@@ -20,7 +20,7 @@ public class CalculatorController {
     /* 메인페이지 */
     @GetMapping("/")
     public String home() {
-        return "index.html";
+        return "/index.html";
     }
 
     /* 계산기 */
