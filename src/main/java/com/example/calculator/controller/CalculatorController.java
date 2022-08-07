@@ -1,15 +1,23 @@
 package com.example.calculator.controller;
 
+import com.example.calculator.service.CalculatorService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Slf4j
 @Controller
 public class CalculatorController {
+
+    @Resource
+    private CalculatorService calculatorService;
+
+    //초기화 유무 (기본 false)
+    private boolean initialization = false;
 
     /* api 테스트 */
     @GetMapping("/api/ping")
@@ -25,12 +33,15 @@ public class CalculatorController {
 
     /* 계산기 */
     @PostMapping("/")
-    public void calculator(List<Integer> num, List<String> code) {
+    public void calculator(List<Integer> num, List<String> code, boolean initial) {
         /* 초기화버튼 클릭시 계산 종료 */
-        /*if(initialization == true) {
-
+        if(initial == true) {
+            log.info("초기화 합니다.");
+            initialization = true;
         }
-        calculator( ); //계산후 나온 결과를 계산할수 있게 재귀호출
-        */
+
+        /* 서비스에서 계산한 후 값 반환. */
+        //var result = CalculatorService.puls()
+
     }
 }
