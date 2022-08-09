@@ -2,7 +2,20 @@
     margin: 0;
     padding: 0;
 }
-.keyPad {
-    width: 400px;
-    height: 700px;
+#main {
+    width: 320px;
+    height: 500px;
+    background: #fdffa6;
+}
+#keyPad {
+    width: 250px;
+    height: 280px;
+    background: #fdffa6;
+    display: flex;
+}
+.box {
+    width: 70px;
+    height: 70px;
+    border: solid 1px #787878;
+    background: #fdffa6;
 }

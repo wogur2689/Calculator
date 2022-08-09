@@ -28,7 +28,7 @@ public class CalculatorController {
     /* 메인페이지 */
     @GetMapping("/")
     public String home() {
-        return "/index.html";
+        return "/index";
     }
 
     /* 계산기 */
