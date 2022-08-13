@@ -7,15 +7,66 @@
     height: 500px;
     background: #fdffa6;
 }
+#header {
+    width: 320px;
+    height: 30px;
+    position: relative;
+}
+#title {
+    position: absolute;
+    left: 130px;
+    top: 3px;
+    font-family: Inter, serif;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+
+#c {
+    position: absolute;
+    left: 290px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    font-family: Inter, serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: #d9d9d9;
+    color: #000;
+}
+#window {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 320px;
+    height: 120px;
+    background-color: #fff;
+    text-align: right;
+    font-size: 40px;
+    line-height: 110px;
+}
 #keyPad {
-    width: 250px;
+    width: 252px;
     height: 280px;
     background: #fdffa6;
-    display: flex;
 }
 .box {
+    display: inline-block;
     width: 70px;
     height: 70px;
+    margin-right: 18px;
     border: solid 1px #787878;
     background: #fdffa6;
+}
+
+.box:nth-child(3) {
+    margin-right: 0;
+}
+
+.box:nth-child(6) {
+    margin-right: 0;
+}
+
+.box:nth-child(9) {
+    margin-right: 0;
 }
