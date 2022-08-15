@@ -16,7 +16,6 @@
     position: absolute;
     left: 130px;
     top: 3px;
-    font-family: Inter, serif;
     font-size: 20px;
     text-align: center;
     color: #000;
@@ -57,14 +56,17 @@
     display: inline-block;
     width: 69px;
     height: 69px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-right: 13px;
+    margin-bottom: 20px;
     border: solid 1px #787878;
     background: #fdffa6;
+    text-align: center;
+    line-height: 70px;
 }
 
 .boxMarginInit {
     margin-right: 0;
+    border-right: none;
 }
 
 #math {
@@ -84,8 +86,23 @@
     height: 69px;
     border: solid 1px #787878;
     background: #fdffa6;
+    text-align: center;
+    line-height: 70px;
 }
 
-#rightTouchPad {
+#operatorPad {
+    position: absolute;
+    left: 250px;
+    top: 150px;
+    width: 69px;
+    height: 350px;
+}
 
+.operatorBoxMarginInit {
+    margin-right: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+.operatorBoxMarginInit:last-child {
+    border-bottom: solid 1px #787878;
 }
