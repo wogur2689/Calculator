@@ -14,18 +14,18 @@
         </div>
         <div id="window">0</div>
         <div id="keyPad">
-            <div class="box"><span>7</span></div>
-            <div class="box"><span>8</span></div>
-            <div class="box boxMarginInit"><span>9</span></div>
-            <div class="box"><span>4</span></div>
-            <div class="box"><span>5</span></div>
-            <div class="box boxMarginInit"><span>6</span></div>
-            <div class="box"><span>1</span></div>
-            <div class="box"><span>2</span></div>
-            <div class="box boxMarginInit"><span>3</span></div>
+            <div class="box" onclick="fn_number()"><span>7</span></div>
+            <div class="box" onclick="fn_number()"><span>8</span></div>
+            <div class="box boxMarginInit" onclick="fn_number()"><span>9</span></div>
+            <div class="box" onclick="fn_number()"><span>4</span></div>
+            <div class="box" onclick="fn_number()"><span>5</span></div>
+            <div class="box boxMarginInit" onclick="fn_number()"><span>6</span></div>
+            <div class="box" onclick="fn_number()"><span>1</span></div>
+            <div class="box" onclick="fn_number()"><span>2</span></div>
+            <div class="box boxMarginInit" onclick="fn_number()"><span>3</span></div>
         </div>
         <div id="math">
-            <div class="box boxMarginInit"><span>0</span></div>
+            <div class="box boxMarginInit" onclick="fn_number()"><span>0</span></div>
             <div id="result"><span>=</span></div>
         </div>
         <div id="operatorPad">
@@ -36,5 +36,14 @@
             <div class="box operatorBoxMarginInit"><span>%</span></div>
         </div>
     </div>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+<script>
+    function fn_number() {
+        console.log($(".box span").val())
+    }
+</script>
 </body>
 </html>
