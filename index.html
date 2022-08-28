@@ -10,30 +10,30 @@
     <div id="main">
         <div id="header">
             <span id="title">계산기</span>
-            <span id="c">C</span>
+            <span id="c" onclick="fn_reset()">C</span>
         </div>
-        <div id="window">0</div>
+        <div id="window"></div>
         <div id="keyPad">
-            <div class="box" onclick="fn_number()"><span>7</span></div>
-            <div class="box" onclick="fn_number()"><span>8</span></div>
-            <div class="box boxMarginInit" onclick="fn_number()"><span>9</span></div>
-            <div class="box" onclick="fn_number()"><span>4</span></div>
-            <div class="box" onclick="fn_number()"><span>5</span></div>
-            <div class="box boxMarginInit" onclick="fn_number()"><span>6</span></div>
-            <div class="box" onclick="fn_number()"><span>1</span></div>
-            <div class="box" onclick="fn_number()"><span>2</span></div>
-            <div class="box boxMarginInit" onclick="fn_number()"><span>3</span></div>
+            <div class="box" onclick="fn_number('7')">7</div>
+            <div class="box" onclick="fn_number('8')">8</div>
+            <div class="box boxMarginInit" onclick="fn_number('9')">9</div>
+            <div class="box" onclick="fn_number('4')">4</div>
+            <div class="box" onclick="fn_number('5')">5</div>
+            <div class="box boxMarginInit" onclick="fn_number('6')">6</div>
+            <div class="box" onclick="fn_number('1')">1</div>
+            <div class="box" onclick="fn_number('2')">2</div>
+            <div class="box boxMarginInit" onclick="fn_number('3')">3</div>
         </div>
         <div id="math">
-            <div class="box boxMarginInit" onclick="fn_number()"><span>0</span></div>
-            <div id="result"><span>=</span></div>
+            <div class="box boxMarginInit" onclick="fn_number('0')">0</div>
+            <div id="result" onclick="fn_cal()">=</div>
         </div>
         <div id="operatorPad">
-            <div class="box operatorBoxMarginInit"><span>+</span></div>
-            <div class="box operatorBoxMarginInit"><span>-</span></div>
-            <div class="box operatorBoxMarginInit"><span>*</span></div>
-            <div class="box operatorBoxMarginInit"><span>/</span></div>
-            <div class="box operatorBoxMarginInit"><span>%</span></div>
+            <div class="box operatorBoxMarginInit" onclick="fn_number('+')">+</div>
+            <div class="box operatorBoxMarginInit" onclick="fn_number('-')">-</div>
+            <div class="box operatorBoxMarginInit" onclick="fn_number('*')">*</div>
+            <div class="box operatorBoxMarginInit" onclick="fn_number('/')">/</div>
+            <div class="box operatorBoxMarginInit" onclick="fn_number('%')">%</div>
         </div>
     </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
